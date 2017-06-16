@@ -25,28 +25,32 @@
        <!-- Collect the nav links, forms, and other content for toggling  -->
        <!--  Navbar section  -->
        <!--  =============== -->
+       
+       
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid" > 
 
              <!-- create hamburger menu when the navigation bar is collapsed-->
              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle  pull-right collapsed" data-toggle="collapse" data-target="#mymenu">
                     <span class="sr-only"> Toggle navigation </span>
                     <span class="icon-bar"> </span>
                     <span class="icon-bar"> </span>
                     <span class="icon-bar"> </span>
                 </button>
+                
                 <div class="projectName navbar-brand">       
                     <a href="#"> &nbsp; Lan Mills </a>
                 </div>  <!-- end of project name -->
              </div>  <!-- end of navbar-header -->
            
              
-             <div class="navbar-collapse collapse" >
-              <ul class="nav navbar-nav navbar-right">
-                <li ><a href="#faq">FAQ</a></li>               
-                <li ><a href="#contact">CONTACT</a></li>
-                
+             <div class="navbar-collapse collapse " id="mymenu" >
+              <ul class="nav navbar-nav navbar-right" >
+    
+                <li ><a href="#home">HOME</a> </li>   
+                <li ><a href="#about">ABOUT</a></li>   
+ 
                 <li role="presentation" class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" 
                        href="#" role="button" aria-haspopup="true" aria-expanded="false"> 
@@ -54,18 +58,33 @@
                     <ul class="dropdown-menu" > 
                         <li> <a href="#work1"> WORK - Project1 </a> </li>
                         <li> <a href="#work2"> WORK - Project2 </a> </li>               
-                    </ul> 
-                </li>              
-           
+                    </ul>      
+                </li>     
                 
-                <li ><a href="#about">ABOUT</a></li>                   
-                <li ><a href="#home">HOME</a> </li>       
+                <li ><a href="#contact">CONTACT</a></li>
+                <li  ><a href="#faq">FAQ</a></li>   
+                
               </ul>
  
              </div> <!-- end of navbar-collapse  -->
  
             </div> <!-- end of container-fluid --> 
         </nav> <!-- end of navbar  --> 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
        
         <!-- Main carousel  -->
         <div class="container-fluid" id="home">
@@ -120,7 +139,7 @@
         <div class="container">
             <!-- Example row of columns -->
             <div class="row">
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-4 col-sm-6 col-xs-12">
                     <h2>Portfolio </h2>
                     <p>
                         <i>My background - <br/>          
@@ -132,7 +151,7 @@
                     </p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /col -->
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-4 col-sm-6 col-xs-12">
                     <h2>Project Goals</h2>
                     <p> <i> 
                             This is an interesting course. I would like to become a Full stack Web Developer.
@@ -142,7 +161,7 @@
 
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /col -->
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-4 col-sm-6 col-xs-12">
                     <h2>Course Goals</h2>
                     <p><i> I want to advancing my existing skill set. I want to become a freelancer after this course. My course goals will be tired closely to my project goals.</i></p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
@@ -217,20 +236,20 @@
       </div><!-- end header -->
 
       <div class="row" >
-        <div class="col-md-3 col-sm-4 col-xs-12" >
-          <img src="img/gingerkitten.jpg" class="img-responsive ">
+        <div class="col-md-3 col-sm-3 col-xs-12" >
+          <img src="img/gingerkitten.jpg" class="img-responsive img-thumbnail">
           <p><center> Ginger kitten </center></p>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <img src="img/gingerkitten.jpg" class="img-responsive">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <img src="img/gingerkitten.jpg" class="img-responsive img-thumbnail">
           <p><center> Ginger kitten </center></p>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-6">
-          <img src="img/gingerkitten.jpg" class="img-responsive">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <img src="img/gingerkitten.jpg" class="img-responsive img-thumbnail">
           <p><center> Ginger kitten </center></p>
         </div> 
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <img src="img/gingerkitten.jpg" class="img-responsive">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <img src="img/gingerkitten.jpg" class="img-responsive img-thumbnail">
           <p><center> Ginger kitten </center></p>
         </div>
  
@@ -325,26 +344,33 @@
         </div>
       </div>
     </div>
-
   </div>   
-              <br> <br> <br>        <br> <br> <br>       <br> <br> <br>       
+    <br> <br> <br>  <br> <br> <br> <br> <br> <br>       
 </div>  <!-- end of faq.html -->
 
 <div id="backtop">&#9650;</div>
-
+ 
         <!-- ============================= -->
-        <!-- JavaScript  scroling when click on navbar -->
+        <!-- JavaScript  -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Bootstrap core JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- JavaScript smooth scrolling when click on navbar -->        
         <script type="text/javascript">
             var $root = $('html, body');
-                $('.navbar-nav a').click(function() {
-                    var href = $.attr(this, 'href');
-                    if(href != undefined) { $root.animate({
-                        scrollTop: $(href).offset().top
-                        }, 500, function () {
-                            window.location.hash = href;
-                        });
-                    }
+                $('.navbar-nav a').click(
+                function() 
+                {
+                    var href = $.attr(this, 'href');             
+                    if (href=='#') return true;  // normal action does occur for drop-down menu                  
+                    if(href != undefined ) 
+                    {   $root.animate
+                        (
+                            {scrollTop: $(href).offset().top}, 
+                            500, 
+                            function () { window.location.hash = href;}
+                        );
+                    }                  
                     return false;
                 });
         </script>
@@ -354,21 +380,14 @@
         $('.carousel').carousel({
             interval: 8000 //changes the speed
         });
-              
         </script><!-- End Script to Activate the Carousel -->
-        
-
-        <!-- ============================= -->
-        <!-- Bootstrap core JS -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <!--  script tags with JavaScript files here -->
-        
+        <!-- ============================= -->       
          <script>  <!-- collapse dropdown menus on clicking an item -->
             $(".dropdown-menu a").click
              (
                function() { $(this).closest(".dropdown-menu").prev().dropdown("toggle");}
              );
          </script>       
-
+           
     </body>
 </html>

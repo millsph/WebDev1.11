@@ -36,14 +36,15 @@ h1,h2,h3 {
 
 .nav {
     /* display: inline-block;*/
-    position: fixed;
-    width: 100%;
+    /*position: fixed;*/
+    width: auto; 
     top: 0;
+ 
     /* padding: 20px;*/
 }
 
  .nav ul {
-    list-style-type: none;
+    /*list-style-type: none;*/
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -52,15 +53,13 @@ h1,h2,h3 {
     text-transform: uppercase;
 }
 
-.nav li {
-    float: right;
-}
+.nav li { float:down; width:auto; }
 
 .nav li a {
     display: inline-block;
     color: white;
     text-align: centre;
-    padding: 1.20m 1.20m;
+    padding: 1.2em 1.2em;
     text-decoration: none;
     transition: color 1000ms;
     -webkit-transition: color 1000ms;
@@ -100,6 +99,8 @@ h1,h2,h3 {
 .work  img {
   padding: 5px;
   margin: 5px;
+  width: auto;
+  height: auto; 
   filter: drop-shadow(10px 10px 2px #000);   
 }
 
@@ -251,7 +252,8 @@ h1,h2,h3 {
 /*/////  back to top button   www.menucool.com /////*/
 #backtop {
     position: fixed;
-    left:auto;right: 20px;top:auto;bottom: 20px;
+    left:auto; 
+    right: 20px;top:auto;bottom: 20px;
 	outline: none;
     overflow:hidden;
     color:#fff;
